@@ -40,12 +40,16 @@
     </nav>
     <section id="profile">
       <div class="section__pic-container">
-        <img src="./assets/profile-pic.png" alt="Anmol Acharya profile picture" />
+        <img src="./assets/avatar-(ProfilePictureMaker.com).png" alt="Anmol Acharya profile picture" />
+        <!-- <img src="./assets/portfolio_pic-Photoroom.png" alt="Anmol Acharya profile picture" /> -->
       </div>
+        <!-- <img src="./assets/profile-pic.png" alt="Anmol Acharya profile picture" />
+      </div> -->
       <div class="section__text">
         <p class="section__text__p1">Hello, I'm</p>
         <h1 class="title">Anmol Acharya</h1>
-        <p class="section__text__p2">Software Engineer</p>
+        <!-- <p class="section__text__p2">Software Engineer</p> -->
+        <p class="section__text__p2" id="animatedText">Software Engineer</p>
         <div class="btn-container">
           <!-- <button
             class="btn btn-color-2"
@@ -93,7 +97,7 @@
                 class="icon"
               />
               <h3>Education</h3>
-              <p>B.Sc. Computer Science (CSE)<br />University of Texas at Arlington</p>
+              <p>B.Sc. Computer Science (CSE)<br />University of Texas at Arlington</br> CGPA: 3.935</br>2022/2023/2024 Dean's List</br>Maverick Academic Scholar </p>
             </div>
             <div class="details-container">
               <img
@@ -283,6 +287,41 @@ I am eager to contribute alongside dynamic teams that prioritize new ideas for c
             </div>
 
           </div>
+
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img
+                src="./assets/shell_project.png"
+                alt="Project-1"
+                class="project-img"
+              />
+            </div>
+            <h2 class="skills-sub-title project-title">Custom Unix Shell Implementation </h2>
+            <div class="btn-container">
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="window.open('https://github.com/AnmolAcharya/UTA_CSE_DEGREE_PLAN_SORTER', '_blank')"
+              >
+              <i class="fab fa-github"></i>
+              </button>
+              <p><ul>
+                <li> Developed a custom Unix shell with interactive and batch processing modes, simulating core functionalities of standard Unix shells like bash</li>
+                <li> Implemented command parsing and process management, resulting in improved execution efficiency by 60% through optimized process control</li>
+                <li> Built and tested using a make build system and custom test scripts within GitHub Codespace, ensuring 99% test coverage and robust performance</li>
+                <li> Enhanced Linux programming proficiency, mastering process control and system-level programming concepts, which accelerated debugging and testing by 50%.</li>
+                </ul></p>
+              <!-- <button/
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://github.com/'"
+              >
+                Live Demo
+              </button> -->
+            </div>
+          </div>
+
+          
+
+
           <div class="details-container color-container">
             <div class="article-container">
               <img
@@ -347,7 +386,7 @@ I am eager to contribute alongside dynamic teams that prioritize new ideas for c
                 class="project-img"
               />
             </div>
-            <h2 class="skills-sub-title project-title">Healthcare Android App</h2>
+            <h2 class="skills-sub-title project-title">Expense Tracker Android App</h2>
             <i class="fa-solid fa-wrench"></i>
             <div class="btn-container">
               <button
@@ -359,8 +398,9 @@ I am eager to contribute alongside dynamic teams that prioritize new ideas for c
               </button>
               <p><ul>
                 <li>Building an android app using Android Studio and Kotlin</li>
-                <li>Developing an app that allows people to purchase their required medications</li>
-                <li>Aim to Enable robust data management to improve the efficiency.</li>
+                <li>Developing an app that allows people to add and manage their daily expenses</li>
+                <li>Aim to Enable budget limitations for certain timeframe and send notifications as needed to the user</li>
+                <li> Detailed analysis through categorization about the expenses entered by the user at the end of the month</li>
                 </ul> </p>
             </div>
           </div>
@@ -427,6 +467,9 @@ I am eager to contribute alongside dynamic teams that prioritize new ideas for c
   <section id="certifications">
       <p class="section_text_p1">Explore My </p>
       <h1 class="title">Certifications</h1>
+      <div style="display: flex;
+                  flex-direction: row;
+                  ">
       <div class="certificate-container">
         <div class="certifications">
           <img src="./assets/Goldman-certificate.png" alt="Goldman" class="certificate-img" />
