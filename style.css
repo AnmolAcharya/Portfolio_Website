@@ -189,10 +189,28 @@ section {
   text-align: center;
 }
 
-.section__text__p2 {
+/* .section__text__p2 {
   font-size: 1.75rem;
   margin-bottom: 1rem;
-}
+} */
+
+/*trying to add animation over here */
+.section__text__p2 {
+    font-size: 1.75rem;
+    margin-bottom: 1rem;
+    font-weight: bold;
+    transition: opacity 0.1s ease-in-out;
+  }
+  
+  .fadeOut {
+    opacity: 0;
+  }
+  
+  .fadeIn {
+    opacity: 1;
+    transition: opacity 0.1s ease-in-out;
+  }
+/*/////*/  
 
 .title {
   font-size: 3rem;
@@ -317,6 +335,7 @@ section {
 /* Skills SECTION */
 
 #skills {
+  flex-wrap: wrap;
   position: relative;
 }
 
@@ -356,7 +375,13 @@ article .icon {
 /* PROJECTS SECTION */
 
 #projects {
+  flex-wrap: wrap;
   position: relative;
+  .skills{
+    .about-containers{
+      flex-wrap: wrap;
+    }
+  }
 }
 
 .color-container {
@@ -383,6 +408,8 @@ article .icon {
 /*Cerifications*/
 
 #certifications {
+   /* display: flex;
+   flex-direction: column; */
     padding: 20px 0;
     text-align: center;
   }
@@ -399,6 +426,7 @@ article .icon {
   
   .certificate-container {
     display: flex;
+    justify-content: center;
     flex-direction: column;
     gap: 20px;
     align-items: center;
@@ -486,4 +514,3 @@ background-color: #E0E0E0;
 color: #333333; /* Dark gray text */
 
 }
-
