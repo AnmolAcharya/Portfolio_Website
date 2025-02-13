@@ -1,0 +1,214 @@
+/* General Styles for All Icons */
+.icon {
+    margin: 10px; /* Margin around the icon */
+    transition: transform 0.2s, color 0.2s; /* Smooth transition for transform and color */
+    cursor: pointer; /* Change cursor to pointer on hover */
+}
+
+/* HTML Icon */
+.fa-html5 {
+    color: #E34F26; /* HTML icon color */
+    font-size: 55px; /* Size of the icon */
+}
+
+.fa-html5:hover {
+    transform: scale(1.2); /* Scale up the icon on hover */
+    color: #C04121; /* Change color on hover */
+}
+
+/* Python Icon */
+.fa-python {
+    color: #3776AB; /* Python icon color */
+    font-size: 50px; /* Size of the icon */
+}
+
+.fa-python:hover {
+    transform: scale(1.2); /* Scale up the icon on hover */
+    color: #285E8E; /* Change color on hover */
+}
+
+/* Java Icon */
+.fa-java {
+    color: #007396; /* Java icon color */
+    font-size: 50px; /* Size of the icon */
+}
+
+.fa-java:hover {
+    transform: scale(1.2); /* Scale up the icon on hover */
+    color: #005f73; /* Change color on hover */
+}
+
+/* JavaScript Icon */
+.fa-js {
+    color: #F7DF1E; /* JavaScript icon color */
+    font-size: 50px; /* Size of the icon */
+}
+
+.fa-js:hover {
+    transform: scale(1.2); /* Scale up the icon on hover */
+    color: #EAD41C; /* Change color on hover */
+}
+
+/* CSS Icon */
+.fa-css3 {
+    color: #1572B6; /* CSS icon color */
+    font-size: 50px; /* Size of the icon */
+}
+
+.fa-css3:hover {
+    transform: scale(1.2); /* Scale up the icon on hover */
+    color: #1161A5; /* Change color on hover */
+}
+
+/* SQL Icon */
+.fa-database {
+    color: #00618A; /* SQL icon color */
+    font-size: 50px; /* Size of the icon */
+}
+
+.fa-database:hover {
+    transform: scale(1.2); /* Scale up the icon on hover */
+    color: #004866; /* Change color on hover */
+}
+
+
+/* X Icon */
+.fa-x {
+    color: #FF0000; /* X icon color */
+    font-size: 50px; /* Size of the icon */
+}
+
+.fa-x:hover {
+    transform: scale(1.2); /* Scale up the icon on hover */
+    color: #CC0000; /* Change color on hover */
+}
+
+/* Assembly Icon */
+.fa-assembly {
+    color: #6E4C13; /* Assembly icon color */
+    font-size: 50px; /* Size of the icon */
+}
+
+.fa-assembly:hover {
+    transform: scale(1.2); /* Scale up the icon on hover */
+    color: #553B0A; /* Change color on hover */
+}
+
+/* C Icon */
+.fa-c {
+    color: #A8B9CC; /* C icon color */
+    font-size: 50px; /* Size of the icon */
+}
+
+.fa-c:hover {
+    transform: scale(1.2); /* Scale up the icon on hover */
+    color: #8799A8; /* Change color on hover */
+}
+
+/* Assuming FontAwesome icons are imported */
+
+.fa-android {
+    font-size: 50px; /* Adjust size as needed */
+    color: green; /* Example color */
+    transition: transform 0.3s ease; /* Example transition */
+  }
+  
+  .fa-android:hover {
+    transform: scale(1.2); /* Example hover effect */
+  }
+
+  /* Assuming FontAwesome icons are imported */
+
+.fa-github {
+    font-size: 50px; /* Adjust size as needed */
+    color: black; /* Example color */
+    transition: transform 0.3s ease; /* Example transition */
+  }
+  
+  .fa-github:hover {
+    transform: scale(1.2); /* Example hover effect */
+  }
+
+  /* Assuming FontAwesome icons are imported */
+
+/* .fa-bootstrap {
+    font-size: 45px;
+    color: purple; 
+    transition: transform 0.3s ease; 
+  }
+  
+  .fa-bootstrap:hover {
+    transform: scale(1.2); 
+  } */
+
+  .fa-fire {
+    color: #ee7b07; /* Sets the icon color to orange-red */
+    font-size: 50px; /* Sets the icon size */
+    margin: 10px; /* Adds some space around the icon */
+    transition: transform 0.2s ease; /* Adds a smooth transition for the transform property */
+}
+
+.fa-fire:hover {
+    transform: scale(1.2); /* Enlarges the icon slightly when hovered over */
+    color: #FF6347; /* Changes the color to tomato when hovered over */
+}
+
+
+.fa-react {
+    font-size: 45px; /* Adjust size as needed */
+    color: rgb(0, 170, 255); /* Example color */
+    transition: transform 0.3s ease; /* Example transition */
+  }
+  
+  .fa-react:hover {
+    transform: scale(1.2); /* Example hover effect */
+  }
+
+  /* Assuming FontAwesome icons are imported */
+
+.fa-server {
+    font-size: 28px; /* Adjust size as needed */
+    color: #FB7A24; /* Example color */
+    transition: transform 0.3s ease; /* Example transition */
+  }
+  
+  .fa-server:hover {
+    transform: scale(1.2); /* Example hover effect */
+  }
+
+  /* Assuming FontAwesome icons are imported */
+
+.fa-microsoft {
+    font-size: 48px; /* Adjust size as needed */
+    color: #007ACC; /* VS Code color */
+    transition: transform 0.3s ease; /* Example transition */
+  }
+  
+  .fa-microsoft:hover {
+    transform: scale(1.2); /* Example hover effect */
+  }
+
+  /* Assuming FontAwesome icons are imported */
+
+.fa-php {
+  font-size: 50px; /* Adjust size as needed */
+  color: #777BB4; /* PHP color */
+  transition: transform 0.3s ease; /* Example transition */
+}
+
+.fa-php:hover {
+  transform: scale(1.2); /* Example hover effect */
+}
+
+.fa-wrench{
+  font-size: 30px;
+  color: black;
+  transition: transform 0.3s ease; /* Example transition */
+}
+
+.fa-wrench:hover {
+  transform: scale(1.2); /* Example hover effect */
+} 
+
+  
+  

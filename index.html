@@ -1,0 +1,643 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="mediaqueries.css" />
+    <link rel="stylesheet" href="kitcodecss.css">
+    <script src="https://kit.fontawesome.com/803a2b4b1d.js" crossorigin="anonymous"></script>
+  </head>
+  <body>
+    <nav id="desktop-nav">
+      <div class="logo">Anmol Acharya</div>
+      <div>
+        <ul class="nav-links">
+          <li><a href="#about">About</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#certifications">Certifications</a></li>
+        </ul>
+      </div>
+    </nav>
+    <nav id="hamburger-nav">
+      <div class="logo">Anmol Acharya</div>
+      <div class="hamburger-menu">
+        <div class="hamburger-icon" onclick="toggleMenu()">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+        <div class="menu-links">
+          <li><a href="#about" onclick="toggleMenu()">About</a></li>
+          <li><a href="#skills" onclick="toggleMenu()">Skills</a></li>
+          <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
+          <li><a href="#certifications" onclick="toggleMenu()">Certifications</a></li>
+        </div>
+      </div>
+    </nav>
+    <section id="profile">
+      <div class="section__pic-container">
+        <img src="./assets/avatar-(ProfilePictureMaker.com).png" alt="Anmol Acharya profile picture" />
+        <!-- <img src="./assets/portfolio_pic-Photoroom.png" alt="Anmol Acharya profile picture" /> -->
+      </div>
+        <!-- <img src="./assets/profile-pic.png" alt="Anmol Acharya profile picture" />
+      </div> -->
+      <div class="section__text">
+        <p class="section__text__p1">Hello, I'm</p>
+        <h1 class="title">Anmol Acharya</h1>
+        <!-- <p class="section__text__p2">Software Engineer</p> -->
+        <p class="section__text__p2" id="animatedText">Software Engineer</p>
+        <div class="btn-container">
+          <!-- <button
+            class="btn btn-color-2"
+            onclick="window.open('./assets/resume-example.pdf')"
+          >
+            Download CV
+          </button> -->
+          <button class="btn btn-color-1" onclick="openGmail()">
+            Contact Me <i class="fa-solid fa-envelope"></i>
+          </button>
+        </div>
+        <div id="socials-container">
+          <img
+            src="./assets/linkedin.png"
+            alt="My LinkedIn profile"
+            class="icon"
+            onclick ="openLinkedInProfile()"
+          />
+          <img
+            src="./assets/github.png"
+            alt="My Github profile"
+            class="icon"
+            onclick="openGithub()"
+          />
+        </div>
+      </div>
+    </section>
+    <section id="about">
+      <p class="section__text__p1">Get To Know More</p>
+      <h1 class="title">About Me</h1>
+      <div class="section-container">
+        <div class="section__pic-container">
+          <img
+            src="./assets/about-pic1.jpg"
+            alt="Profile picture"
+            class="about-pic"
+          />
+        </div>
+        <div class="about-details-container">
+          <div class="about-containers">
+            <div class="details-container">
+              <img
+                src="./assets/education.png"
+                alt="Education icon"
+                class="icon"
+              />
+              <h3>Education</h3>
+              <p>B.Sc. Computer Science (CSE)<br />University of Texas at Arlington</br> CGPA: 3.948</br>2022/2023/2024 Dean's List</br>Maverick Academic Scholar </p>
+            </div>
+            <div class="details-container">
+              <img
+                src="./assets/experience.png"
+                alt="Experience icon"
+                class="icon"
+              />
+              <h3>Key Skills</h3>
+              <p>Problem Solver<br /> Effective Communicator <br /> Adaptable Learner</p>
+            </div>
+          </div>
+          <div class="text-container">
+            <p>
+              I am a Junior, Dean’s list, Upsilon Pi Epsilon recipient majoring in Computer Science at the University of Texas at Arlington (UTA). I am passionate about technologies that drive me to innovate and optimize. I love not just building and designing but organizing and strategizing to ensure optimal product functionality and user experience
+              My interests span across software development, product/project management, data analysis, machine learning and Artificial intelligence. 
+I am eager to contribute alongside dynamic teams that prioritize new ideas for creativity, growth, and excellence.
+            </p>
+          </div>
+        </div>
+      </div>
+      <img
+        src="./assets/arrow.png"
+        alt="Arrow icon"
+        class="icon arrow"
+        onclick="location.href='./#experience'"
+      />
+    </section>
+    <section id="skills">
+      <p class="section__text__p1"><br/></br></br>Explore My</p>
+      <h1 class="title">SkillSets</h1>
+      <div class="skills-details-container">
+        <div class="about-containers">
+          <div class="details-container">
+            <h2 class="skills-sub-title">Programming Languages</h2>
+            <div class="article-container">
+              <article>
+                <!-- <img
+                  src="./assets/checkmark.png"
+                  alt="skills icon"
+                  class="icon"
+                /> -->
+                  <i class="fa-brands fa-html5"></i>
+                <div>
+                  <h3>HTML</h3>
+                </div>
+              </article>
+
+              <article>
+                <i class="fa-brands fa-css3"></i>
+                <div>
+                  <h3>CSS</h3>
+                </div>
+              </article>
+
+              <article>
+                <i class="fa-brands fa-js"></i>
+                <div>
+                  <h3>JavaScript</h3>
+                </div>
+              </article>
+              <article>
+                <i class="fa-brands fa-python"></i>
+                <div>
+                  <h3>Python</h3>
+                </div>
+              </article>
+              <article>
+                <i class="fa-brands fa-java"></i>
+                <div>
+                  <h3>Java</h3>
+                </div>
+              </article>
+              <article>
+                <i class="fa-brands fa-c"></i>
+                <div>
+                  <h3>C/C++</h3>
+                </div>
+              </article>
+              <article>
+                <i class="fa-solid fa-database"></i>
+                <div>
+                  <h3>SQL</h3>
+                </div>
+              </article>
+              <article>
+                <i class="fab fa-php"></i>
+                <div>
+                  <h3>PhP</h3>
+                </div>
+              </article>
+            </div>
+          </div>
+          <div class="details-container">
+            <h2 class="skills-sub-title">Tools</h2>
+            <div class="article-container">
+              <article>
+                <i class="fa-brands fa-android"></i>
+                <div>
+                  <h3>Android Studio</h3>
+                  <p>App Development</p>
+                </div>
+              </article>
+              <article>
+                <i class="fab fa-github"></i>
+                <div>
+                  <h3>GIT/GITHUB</h3>
+                  <p>Collaboration</p>
+                </div>
+              </article>
+              <article>
+                <!-- <i class="fab fa-bootstrap"></i> -->
+                <i class="fa-solid fa-fire"></i>
+                <div>
+                  <h3>Firebase</h3>
+                  <p>Database</p>
+                </div>
+              </article>
+              <article>
+                <i class="fa-brands fa-react"></i>
+                <div>
+                  <h3>React</h3>
+                  <p>Front-End Development</p>
+                </div>
+              </article>
+              <article>
+                <i class="fas fa-server"></i>
+                <div>
+                  <h3>Xampp Server</h3>
+                  <p>SQL and Back-End Development</p>
+                </div>
+              </article>
+              <article>
+                <i class="fab fa-microsoft"></i>
+                <div>
+                  <h3>Visual Studio Code</h3>
+                  <p>Code Editor</p>
+                </div>
+              </article>
+            </div>
+          </div>
+        </div>
+      </div>
+      <img
+        src="./assets/arrow.png"
+        alt="Arrow icon"
+        class="icon arrow"
+        onclick="location.href='./#projects'"
+      />
+    </section>
+    </br>
+    </br>
+    </br>
+
+    <section id="projects">
+      <p class="section__text__p1"><br/></br></br></br></br></br>Explore My Recent</p>
+      <h1 class="title">Projects</h1>
+      <div class="skills">
+        <div class="about-containers">
+
+
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img
+                src="./assets/travelAI.png"
+                alt="Project-1"
+                class="project-img"
+              />
+            </div>
+            <h2 class="skills-sub-title project-title">AITravelPLanner: AI Travel Assistant</h2>
+            <div class="btn-container">
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="window.open('https://github.com/AnmolAcharya/AI_TriPlanner', '_blank')"
+              >
+              <i class="fab fa-github"></i>
+              </button>
+              <p><ul>
+                <li>Building an AI Travel Planner to help assist with creating trip details and itineries!</li>
+                <li> Integrated Google Gemini, API's to extract the details effectively.</li>
+                <li> Used Google Firebase for storing the user details and trips details and Google Authentication for User SignIn</li>
+                <li>Designed and Developed responsive and appealing frontend with React.js, React Router.</li>
+                </ul></p>
+                <button 
+                class="btn btn-color-2 project-btn"
+                 onclick="window.open('https://github.com/AnmolAcharya/AI_TriPlanner', '_blank')">
+                  <h4> Ongoing..... </h4>
+                </button>
+              </div> 
+
+            </div>
+
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img
+                src="./assets/mernDONATION.png"
+                alt="Project-1"
+                class="project-img"
+              />
+            </div>
+            <h2 class="skills-sub-title project-title">CampusCushion: Donation Platform (MERN Stack)</h2>
+            <div class="btn-container">
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="window.open('https://github.com/AnmolAcharya/MERN_DonationAPP', '_blank')"
+              >
+              <i class="fab fa-github"></i>
+              </button>
+              <p><ul>
+                <li>Built a secure donation platform using MERN stack, enabling campus students to receive financial support</li>
+                <li>Engineered an optimized backend using Node.js, Express.js, and MongoDB, enabling seamless data storage while
+                  achieving 99.9% uptime by implementing database indexing and efficient API routing, tested via Postman.
+                </li>
+                <li>Created a responsive frontend with React.js utilizing React Router for multi-page navigation with optimized route
+                  handling and state management enhancing user experience through component rendering and transitions.</li>
+                <li>Integrated Google Pay for secure donations with encrypted transactions and seamless payment processing. 
+                </li>
+                </ul></p>
+                <button 
+                class="btn btn-color-2 project-btn"
+                 onclick="window.open('https://mern-donation-app-latest.vercel.app/', '_blank')">
+                  <h4> Live Demo </h4>
+                </button>
+              </div> 
+               
+            </div>
+
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img
+                src="./assets/sirexa.png"
+                alt="Project-1"
+                class="project-img"
+              />
+            </div>
+            <h2 class="skills-sub-title project-title">Sirixa: AI Voice Assistant</h2>
+            <div class="btn-container">
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="window.open('https://github.com/AnmolAcharya/amigofrontend?tab=readme-ov-file', '_blank')"
+              >
+              <i class="fab fa-github"></i>
+              </button>
+              <p><ul>
+                <li>Developed an AI-powered voice assistant with 95% accuracy, enabling query responses, real-time updates, and
+                  executing commands using Google Gemini, OpenAI and weather APIs, verified thro</li>
+                <li>Designed a responsive frontend with React.js and Material UI, optimizing user interaction with an intuitive interface.
+                </li>
+                <li>Engineered a FASTAPI-based backend, processing 500+ voice commands per minute, optimizing request handling, 
+                ensuring third-party API integration and enabling real-time data retrieval with low-latency execution.</li> 
+                <li>Refactored API requests handling logic, reducing response latency by 40% through efficient asynchronous processing.
+                </li>
+                </ul></p>
+                <button 
+                class="btn btn-color-2 project-btn"
+                 onclick="window.open('https://sirixafrontend.netlify.app/', '_blank')">
+                  <h4> Live Demo </h4>
+                </button>
+              </div> 
+            </div>
+
+            <div class="details-container color-container">
+              <div class="article-container">
+                <img
+                  src="./assets/shell_project.png"
+                  alt="Project-1"
+                  class="project-img"
+                />
+              </div>
+              <h2 class="skills-sub-title project-title">Custom Unix Shell Implementation </h2>
+              <div class="btn-container">
+                <button
+                  class="btn btn-color-2 project-btn"
+                  onclick="window.open('https://github.com/AnmolAcharya/UTA_CSE_DEGREE_PLAN_SORTER', '_blank')"
+                >
+                <i class="fab fa-github"></i>
+                </button>
+                <p><ul>
+                  <li> Developed a custom Unix shell with interactive and batch processing modes, simulating core functionalities of standard Unix shells like bash</li>
+                  <li> Implemented command parsing and process management, resulting in improved execution efficiency by 60% through optimized process control</li>
+                  <li> Built and tested using a make build system and custom test scripts within GitHub Codespace, ensuring 99% test coverage and robust performance</li>
+                  <li> Enhanced Linux programming proficiency, mastering process control and system-level programming concepts, which accelerated debugging and testing by 50%.</li>
+                  </ul></p>
+                  <button 
+                  class="btn btn-color-2 project-btn"
+                   onclick="window.open('https://www.youtube.com/watch?v=RfleOdRfock', '_blank')">
+                    <h4> Video Demo </h4>
+                  </button>
+              </div>
+            </div>
+
+
+            <div class="details-container color-container">
+              <div class="article-container">
+                <img
+                  src="./assets/Mern_events.png"
+                  alt="Project-1"
+                  class="project-img"
+                />
+              </div>
+              <h2 class="skills-sub-title project-title">UTA Events RSVP/Planner (MERN Stack)</h2>
+              <div class="btn-container">
+                <button
+                  class="btn btn-color-2 project-btn"
+                  onclick="window.open('https://github.com/AnmolAcharya/-MERN-UTA_Events_Planner?tab=readme-ov-file', '_blank')"
+                >
+                <i class="fab fa-github"></i>
+                </button>
+                <p><ul>
+                  <li>Built a events resrvation and planner using MERN stack, enabling people to book events.</li>
+                  <li>Engineered an optimized backend using Node.js, Express.js, and MongoDB, enabling seamless data storage while
+                    achieving 99.9% uptime by implementing database indexing and efficient API routing, tested via Postman.
+                  </li>
+                  <li>Created a responsive frontend with React.js, CSS and BootStrap for smooth flow and intuitive interactions.</li>
+                  <li>Hosted the application through Netlify for the frontend and render for the backend.</li>
+                  </ul></p>
+                  <button 
+                  class="btn btn-color-2 project-btn"
+                   onclick="window.open('https://utaeventplanner.netlify.app/', '_blank')">
+                    <h4> Live Demo </h4>
+                  </button>
+                </div> 
+                 
+              </div>
+
+
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img
+                src="./assets/CineSwap.png"
+                alt="Project-1"
+                class="project-img"
+              />
+            </div>
+            <h2 class="skills-sub-title project-title">CineSwipe: A React Movie Library</h2>
+            <div class="btn-container">
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="window.open('https://github.com/AnmolAcharya/CineSwipe', '_blank')"
+              >
+              <i class="fab fa-github"></i>
+              </button>
+              <p><ul>
+                <li>Developed  an interactive movie library application enhancing user satisfaction by providing a seamless way to search for movies, add them to a favorites section, and remove them as needed</li>
+                <li>Improved application performance by 30% using  IMDb API for real time movie data retrieval while optimizing API  performance with efficient API calls and state management in React</li>
+                <li>Ensured robust API interactions by testing with Postman, leading to a 25% increase in data retrieval speed and a 40% improvement in overall system reliability</li>
+                <li>Enhanced user engagement with responsive user interfaces, leveraging Bootstrap and CSS  for smoother user experience</li>
+                </ul></p>
+              <!-- <button/
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://github.com/'"
+              >
+                Live Demo
+              </button> -->
+            </div>
+
+          </div>
+
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img
+                src="./assets/Degree_Plan_sorter.png"
+                alt="Project-1"
+                class="project-img"
+              />
+            </div>
+            <h2 class="skills-sub-title project-title">UTA CSE Degree Plan Sorter</h2>
+            <div class="btn-container">
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="window.open('https://github.com/AnmolAcharya/UTA_CSE_DEGREE_PLAN_SORTER', '_blank')"
+              >
+              <i class="fab fa-github"></i>
+              </button>
+              <p><ul>
+                <li>Developed an interactive web application using JavaScript, HTML and CSS to assist UTA CSE Students navigate their CSE degree requirements from freshmen to senior year</li>
+                <li>Simplified the complex structure of UTA CSE Degree flowchart by automating the visualization of course prerequisites</li>
+                <li>Ensured accurate and efficient degree planning, reducing manual effort by 50% and errors by 90% for UTA CSE students</li>
+                </ul></p>
+                <button 
+                class="btn btn-color-2 project-btn"
+                 onclick="window.open('https://anmolacharya.github.io/UTA_CSE_DEGREE_PLAN_SORTER/', '_blank')">
+                  <h4> Live Demo </h4>
+                </button>
+            </div>
+          </div>
+
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img
+                src="./assets/sql.png"
+                alt="Project 2"
+                class="project-img"
+              />
+            </div>
+            <h2 class="skills-sub-title project-title">Doctoral Database Management</h2>
+            <div class="btn-container">
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="window.open('https://github.com/AnmolAcharya/Doctoral_Database', '_blank')"
+              >
+              <i class="fab fa-github"></i>
+              </button>
+            <p><ul>
+              <li>Developed and managed MySQL queries in the database server environment increasing database reliability by 40% using XAMPP Server</li>
+              <li>Created backend functionality using PHP improving data operation efficiency by 50% through integration with a responsive web interface</li>
+              <li>Enabled robust data management and categorization of the doctoral students improving administrative efficiency by 75% streamlining operations</li>
+              </ul> </p>
+            </div>
+          </div>
+
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img
+                src="./assets/android-app.avif"
+                alt="project-3"
+                class="project-img"
+              />
+            </div>
+            <h2 class="skills-sub-title project-title">Expense Tracker Android App</h2>
+            <i class="fa-solid fa-wrench"></i>
+            <div class="btn-container">
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="window.open('https://github.com/AnmolAcharya/Expense_Tracker', '_blank')"
+              >
+              <i class="fab fa-github"></i>
+              </button>
+              <p><ul>
+                <li>Built an android app using Android Studio and Kotlin</li>
+                <li>Developed an app that allows people to add and manage their daily expenses along with category breakdown for the expenses.</li>
+                <li>Enabled budget limitations for certain timefram as needed to the user to avoid spending too much in the given timeframe</li>
+                <li>User login, signin, delete accounts and logout implemented for better personalized experience. </li>
+                </ul> </p>
+            </div>
+          </div>
+
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img
+                src="./assets/tictactoe.webp"
+                alt="Project 3"
+                class="project-img"
+              />
+            </div>
+            <h2 class="skills-sub-title project-title">Tic-Tac-Toe in Assembly(X86)</h2>
+            <div class="btn-container">
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="window.open('https://github.com/AnmolAcharya/AssemblyProjects', '_blank')"
+              >
+              <i class="fab fa-github"></i>
+              </button>
+              <p><ul>
+                <li>Built a Tic-Tac-Toe game in Assembly Language(X86) using fasm</li>
+                <li>Implemented the game as User vs. Computer</li>
+                <li>Integrated error handling and user interface enhancements to improve user experience</li>
+                </ul> </p>
+            </div>
+          </div>
+
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img
+                src="./assets/grocey_app.png"
+                alt="Project 2"
+                class="project-img"
+              />
+            </div>
+            <h2 class="skills-sub-title project-title">Grocery App</h2>
+            <div class="btn-container">
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="window.open('https://github.com/AnmolAcharya/Grocery_App', '_blank')"
+              >
+              <i class="fab fa-github"></i>
+              </button>
+            <p><ul>
+              <li>Built a responsive shopping cart app that allows users to add grocery/household items in their cart and delete accordingly</li>
+              <li>Realtime Database is managed using firebase which allows users to share the app with roommates/family members </li>
+              <li>Enabled robust data management and categorization according to groceries and household items while maintaining a user friendly responsive design layout</li>
+              <li>Developed primarily for modile devices</li>
+              </ul> </p>
+            </div>
+          </div>
+
+
+        </div>
+      </div>
+      <img
+        src="./assets/arrow.png"
+        alt="Arrow icon"
+        class="icon arrow"
+        onclick="location.href='./#contact'"
+      />
+    </section>
+
+  <section id="certifications">
+      <p class="section_text_p1">Explore My </p>
+      <h1 class="title">Certifications</h1>
+      <div style="display: flex;
+                  flex-direction: row;
+                  ">
+      <div class="certificate-container">
+        <div class="certifications">
+          <img src="./assets/Goldman-certificate.png" alt="Goldman" class="certificate-img" />
+          <h2 class="certificate-title">Software Engineering Job Simulation</h2>
+          <div class="certificate-details">
+            <p class="certificate-topic">Goldman Sachs</p>
+            <p class="certificate-tools">Password, Hashing, IT Security</p>
+          </div>
+          <p class="certificate-info">
+            Goldman Sachs virtual Software Engineering job simulation on FORAGE.
+          </p>
+          <div class="certificate-links">
+            <a href="https://www.theforage.com/simulations/aws-apac/solutions-architecture-ts4o/" target="_blank" class="certificate-link">
+              <i class="fab fa-github"></i> Goldman Sachs Certificate here!
+            </a>
+          </div>
+        </div>
+      </div>
+      <div class="certificate-container">
+        <div class="certifications">
+          <img src="./assets/AWS-certificate.png" alt="AWS" class="certificate-img" />
+          <h2 class="certificate-title">AWS Solutions Architect Job Simulation</h2>
+          <div class="certificate-details">
+            <p class="certificate-topic">Amazon Web Services</p>
+            <p class="certificate-tools">AWS, Elastic beanstalk, startup servers/hosting</p>
+          </div>
+          <p class="certificate-info">
+            AWS Solutions Architect job simulation on FORAGE.
+          </p>
+          <div class="certificate-links">
+            <a href="https://www.theforage.com/simulations/aws-apac/solutions-architecture-ts4o/" target="_blank" class="certificate-link">
+              <i class="fab fa-github"></i> AWS Certificate link here!
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <script src="script.js"></script>
+  </body>
+</html>
